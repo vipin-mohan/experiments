@@ -1,0 +1,2 @@
++ This directory contains material I worked on for my Lean Launchpad product called Droplet.
++ Droplet is a smart water meter. Think of it as "Nest for water"

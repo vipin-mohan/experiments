@@ -1,0 +1,1 @@
+This directory contains material I worked on for my Lean Launchpad product

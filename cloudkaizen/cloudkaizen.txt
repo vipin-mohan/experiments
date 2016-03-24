@@ -1,3 +1,4 @@
 + This directory contains files from my work for CloudKaizen
 + CloudKaizen is a cloud consulting company withexpertise in business processes and OpenStack based cloud computing
 + I am currently developing online presence and preliminary marketing plan for the company
+

@@ -15,8 +15,6 @@ GPIO.setup(TRIG,GPIO.OUT)
 GPIO.setup(ECHO,GPIO.IN)
 
 var = 10
-total_volume_of_water = 0
-total_duration = 0
 while var > 0 :
   # Allow 2 seconds for the TRIG pin to settle
   GPIO.output(TRIG, False)

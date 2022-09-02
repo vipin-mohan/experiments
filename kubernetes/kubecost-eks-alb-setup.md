@@ -21,11 +21,11 @@ eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=<cluster n
 4. Create the IAM role and Kubernetes service account:
 ```
 eksctl create iamserviceaccount \
-  --cluster=eks-cluster-august2022 \
+  --cluster=<cluster name> \
   --namespace=kube-system \
   --name=aws-load-balancer-controller \
   --role-name "AmazonEKSLoadBalancerControllerRole" \
-  --attach-policy-arn=arn:aws:iam::119277115670:policy/AWSLoadBalancerControllerIAMPolicy \
+  --attach-policy-arn=arn:aws:iam::<AWS Account ID>:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
 ```
 
@@ -38,7 +38,7 @@ Make sure that you set the correct image.repository for your region (see here: h
 ```
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   -n kube-system \
-  --set clusterName=eks-cluster-august2022 \
+  --set clusterName=<cluster name> \
   --set serviceAccount.create=false \
   --set serviceAccount.name=aws-load-balancer-controller \
   --set image.repository=602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-load-balancer-controller

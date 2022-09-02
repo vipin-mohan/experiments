@@ -51,3 +51,8 @@ You can get the ALB endpoint by running
 kubectl get ingress -n kubecost
 ```
 Paste this URL in your browser to access the Kubecost dashboard. Note that it may take a couple minutes for the endpoint to be active.
+
+### Useful reference docs:
+* https://guide.kubecost.com/hc/en-us/articles/4407601820055-Ingress-Examples#alb-example
+* https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+* https://aws.amazon.com/blogs/containers/aws-and-kubecost-collaborate-to-deliver-cost-monitoring-for-eks-customers/

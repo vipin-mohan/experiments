@@ -5,7 +5,7 @@ The steps in this doc are primarily from [here](https://docs.aws.amazon.com/eks/
 
 1. SSH into an EC2 instance so that you can access your EKS cluster:
 ```
-ssh -i ec2-pem-files/ec2instance-august2022.pem ec2-user@44.194.235.109
+ssh -i <pem file> <username>@<host>
 ```
 
 2. Create an IAM policy. (This might already exist and you might be able to skip this step. Check if AWSLoadBalancerControllerIAMPolicy exists)
@@ -15,7 +15,7 @@ curl -o iam_policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-lo
 
 3. Use the eksctl CLI to associate an IAM OIDC provider with the cluster:
 ```
-eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=eks-cluster-august2022
+eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=<cluster name>
 ```
 
 4. Create the IAM role and Kubernetes service account:

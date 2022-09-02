@@ -50,4 +50,4 @@ You can get the ALB endpoint by running
 ```
 kubectl get ingress -n kubecost
 ```
-Paste this URL in your browser to access the Kubecost dashboard. Note that it may take a couple minutes for the endpoint to be active
+Paste this URL in your browser to access the Kubecost dashboard. Note that it may take a couple minutes for the endpoint to be active.

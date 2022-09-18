@@ -20,6 +20,6 @@ metadata:
   name: default
 spec:
   subnetSelector:
-    karpenter.sh/discovery: eks-cluster-august2022 
+    karpenter.sh/discovery: <cluster name>
   securityGroupSelector:
-    karpenter.sh/discovery: eks-cluster-august2022
+    karpenter.sh/discovery: <cluster name>
